@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyM"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMc" />
+
+    <TextView
+        android:id="@+id/textViewFirsat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fırsatlar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMc"
+        tools:layout_editor_absoluteX="11dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="308dp"
+        android:layout_height="223dp"
+        app:srcCompat="@drawable/mcdonald1"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="383dp"
+        android:layout_height="228dp"
+        app:srcCompat="@drawable/mcdonaldmc"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="404dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
